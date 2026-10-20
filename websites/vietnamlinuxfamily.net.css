@@ -191,11 +191,13 @@ body,
 }
 
 /* composer: keep it readable on the wallpaper, same tint family as the cards */
-.composer-bar {
+.composer-bar,
+.composer-bar.thread-composer {
   background: rgba(245, 246, 244, 0.25) !important;
   border-radius: 12px !important;
 }
-html.vnlf-dark .composer-bar {
+html.vnlf-dark .composer-bar,
+html.vnlf-dark .composer-bar.thread-composer {
   background: rgba(45, 45, 45, 0.25) !important;
 }
 
