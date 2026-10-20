@@ -65,7 +65,11 @@
   border-radius: 18px !important;
   overflow: hidden !important;
 }
+/* cover video/poster: fill the banner instead of letterboxing (fit) */
 .profile-cover-media,
+.profile-cover video {
+  object-fit: cover !important;
+}
 .profile-cover-toggle,
 .profile-pet {
   border-radius: inherit !important;
