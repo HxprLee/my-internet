@@ -122,11 +122,6 @@ body,
 
 /* right rail widgets */
 .rail-card,
-[class*="voice-room"],
-[class*="VoiceRoom"],
-[class*="voice_room"],
-[class*="voiceRoom"],
-[class*="voice"]:not([class*="voice-icon"]),
 .voice-card {
   background: rgba(245, 246, 244, 0.5) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
@@ -134,14 +129,38 @@ body,
   border-radius: 12px !important;
 }
 html.vnlf-dark .rail-card,
-html.vnlf-dark [class*="voice-room"],
-html.vnlf-dark [class*="VoiceRoom"],
-html.vnlf-dark [class*="voice_room"],
-html.vnlf-dark [class*="voiceRoom"],
 html.vnlf-dark .voice-card {
   background: rgba(45, 45, 45, 0.5) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* voice card: inner elements transparent — no white pill behind chip/button */
+.voice-card .voice-card-head,
+.voice-card .voice-people,
+.voice-card .voice-card-kicker,
+.voice-card-head,
+.voice-people,
+.voice-card-kicker {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.voice-card a,
+.voice-people a {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+html.vnlf-dark .voice-card-head,
+html.vnlf-dark .voice-people,
+html.vnlf-dark .voice-card-kicker,
+html.vnlf-dark .voice-card a,
+html.vnlf-dark .voice-people a {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* sticky header: subtle backdrop, fades on idle */
