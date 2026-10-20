@@ -121,13 +121,24 @@ body,
 }
 
 /* right rail widgets */
-.rail-card {
+.rail-card,
+[class*="voice-room"],
+[class*="VoiceRoom"],
+[class*="voice_room"],
+[class*="voiceRoom"],
+[class*="voice"]:not([class*="voice-icon"]),
+.voice-card {
   background: rgba(245, 246, 244, 0.5) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
   border: 1px solid rgba(0, 0, 0, 0.05) !important;
   border-radius: 12px !important;
 }
-html.vnlf-dark .rail-card {
+html.vnlf-dark .rail-card,
+html.vnlf-dark [class*="voice-room"],
+html.vnlf-dark [class*="VoiceRoom"],
+html.vnlf-dark [class*="voice_room"],
+html.vnlf-dark [class*="voiceRoom"],
+html.vnlf-dark .voice-card {
   background: rgba(45, 45, 45, 0.5) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(255, 255, 255, 0.05) !important;
