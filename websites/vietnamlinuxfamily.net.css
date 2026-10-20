@@ -135,28 +135,19 @@ html.vnlf-dark .voice-card {
   border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
-/* voice card: inner elements transparent — no white pill behind chip/button */
+/* voice card: kill white pill background on header/chip only;
+   .voice-people (join button) keeps its original color */
 .voice-card .voice-card-head,
-.voice-card .voice-people,
 .voice-card .voice-card-kicker,
 .voice-card-head,
-.voice-people,
 .voice-card-kicker {
   background: transparent !important;
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
-.voice-card a,
-.voice-people a {
-  background: transparent !important;
-  background-color: transparent !important;
-}
 html.vnlf-dark .voice-card-head,
-html.vnlf-dark .voice-people,
-html.vnlf-dark .voice-card-kicker,
-html.vnlf-dark .voice-card a,
-html.vnlf-dark .voice-people a {
+html.vnlf-dark .voice-card-kicker {
   background: transparent !important;
   background-color: transparent !important;
   border: none !important;
