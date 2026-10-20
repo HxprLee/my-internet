@@ -38,6 +38,8 @@
 .user-actions,
 .user-badge,
 .sidebar-feedback-entry,
+.composer-plus,
+.channel-dot,
 [data-testid="profile-header"],
 [data-testid="profile-cover"],
 [data-testid="profile-info"],
@@ -110,6 +112,44 @@ html.vnlf-dark .app-shell,
 
 /* tablist: only place where --line is visible */
 [role="tablist"] {
+  --line: var(--border-color) !important;
+}
+
+/* channel sidebar + info rail: dim by default, full opacity on hover/focus */
+.communication-list.channel-list,
+.channel-info {
+  opacity: 0.1 !important;
+  transition: opacity 0.2s ease;
+}
+
+.communication-list.channel-list:hover,
+.communication-list.channel-list:focus-within,
+.channel-info:hover,
+.channel-info:focus-within {
+  opacity: 1 !important;
+}
+
+/* send button: no chrome, brand-colored icon */
+.send-button {
+  border: none !important;
+  background: none !important;
+  color: var(--brand) !important;
+}
+.send-button:disabled {
+  color: var(--brand) !important;
+  opacity: 0.5;
+}
+
+/* message bubbles: let the wallpaper through */
+.shared-chat-bubble {
+  background: color-mix(in srgb, var(--surface-soft) 20%, transparent) !important;
+}
+
+/* selected cards: restore --line so borders show up */
+.composer-bar,
+.article-card,
+.rail-card,
+.voice-card {
   --line: var(--border-color) !important;
 }
 
