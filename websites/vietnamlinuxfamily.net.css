@@ -121,52 +121,16 @@ body,
 }
 
 /* right rail widgets */
-.rail-card,
-.right-rail [class*="card"],
-.right-rail [class*="Card"],
-.right-rail > * {
-  background: rgba(255, 255, 255, 0.15) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
-  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+.rail-card {
+  background: rgba(245, 246, 244, 0.5) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
   border-radius: 12px !important;
-  margin-bottom: 12px !important;
 }
-html.vnlf-dark .rail-card,
-html.vnlf-dark .right-rail [class*="card"],
-html.vnlf-dark .right-rail [class*="Card"],
-html.vnlf-dark .right-rail > * {
-  background: rgba(45, 45, 45, 0.4) !important;
+html.vnlf-dark .rail-card {
+  background: rgba(45, 45, 45, 0.5) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
-  border-color: rgba(255, 255, 255, 0.06) !important;
-}
-
-/* left rail widgets (recent/trending/starred) */
-.sidebar [class*="card"]:not(.sidebar-inner *),
-.sidebar [class*="Card"]:not(.sidebar-inner *),
-.sidebar [class*="widget"],
-.sidebar [class*="Widget"],
-.sidebar [data-testid*="card"],
-.sidebar .sidebar-section,
-.sidebar .sidebar-block,
-.sidebar [class*="sidebar-list"],
-.sidebar [class*="SidebarList"] {
-  background: rgba(255, 255, 255, 0.15) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
-  border: 1px solid rgba(0, 0, 0, 0.06) !important;
-  border-radius: 12px !important;
-  margin-bottom: 12px !important;
-}
-html.vnlf-dark .sidebar [class*="card"]:not(.sidebar-inner *),
-html.vnlf-dark .sidebar [class*="Card"]:not(.sidebar-inner *),
-html.vnlf-dark .sidebar [class*="widget"],
-html.vnlf-dark .sidebar [class*="Widget"],
-html.vnlf-dark .sidebar .sidebar-section,
-html.vnlf-dark .sidebar .sidebar-block,
-html.vnlf-dark .sidebar [class*="sidebar-list"],
-html.vnlf-dark .sidebar [class*="SidebarList"] {
-  background: rgba(45, 45, 45, 0.4) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
-  border-color: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 /* sticky header: subtle backdrop, fades on idle */
