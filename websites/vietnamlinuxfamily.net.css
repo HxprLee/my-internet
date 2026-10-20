@@ -70,9 +70,10 @@
 .profile-cover video {
   object-fit: cover !important;
 }
-/* music disc: fill the thumbnail to the round label (was letterboxing as fit) */
+/* music disc: zoom thumbnail past 100% so the youtube hqdefault black bars are cropped out */
 .vinyl-label {
   background-size: cover !important;
+  background-size: 130% !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
