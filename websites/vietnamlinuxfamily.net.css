@@ -70,9 +70,12 @@
 .profile-cover video {
   object-fit: cover !important;
 }
-/* music disc: yt hqdefault is 4:3 with ~12.5% black bars top+bottom, so zoom by
-   height (not width) past them; cover the pseudo-elements too since the site's
-   --thumb may be painted on ::before/::after */
+/* music disc: yt hqdefault is 4:3 with black bars top+bottom, so zoom by height
+   past them. --thumb is declared on .vinyl-label but INHERITS, and the site paints
+   it on the parent .vinyl — so the size must be set there too. */
+.vinyl,
+.vinyl::before,
+.vinyl::after,
 .vinyl-label,
 .vinyl-label::before,
 .vinyl-label::after {
