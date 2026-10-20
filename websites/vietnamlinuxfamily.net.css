@@ -1,0 +1,133 @@
+/* vietnamlinuxfamily.net-transparent */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* transparent background vars for both light and dark modes */
+.app-shell {
+  --bg: transparent !important;
+  --paper: transparent !important;
+  --surface: transparent !important;
+  --surface-soft: transparent !important;
+  --line: transparent !important;
+}
+
+/* dark mode overrides */
+html.vnlf-dark .app-shell,
+.app-shell.dark {
+  --bg: transparent !important;
+  --paper: transparent !important;
+  --surface: transparent !important;
+  --surface-soft: transparent !important;
+  --line: transparent !important;
+}
+
+/* page shell and layout */
+html,
+body,
+.app-shell,
+.sidebar,
+.sidebar-inner,
+.sidebar-bottom,
+.sidebar-social-community,
+.sidebar-social-links,
+.main-content,
+.feed-column,
+.feed-stack,
+.thread-feed,
+.thread-feed-stack,
+.feed-tabs,
+.feed-sentinel,
+.main-header,
+.mobile-header,
+.bottom-nav,
+.bottom-nav-menu,
+.right-rail,
+.rail-card,
+.rail-footer,
+.composer-bar,
+.composer-bar.thread-composer {
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  transition:
+    background-color 0.4s ease-in-out,
+    background 0.4s ease-in-out,
+    border 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out,
+    opacity 0.4s ease-in-out !important;
+}
+
+/* article / thread cards */
+.article-card,
+.thread-post,
+.article-actions,
+.thread-actions,
+.article-content-renderer,
+.post-rich-text {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* right rail widgets */
+.rail-card {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* sticky header: subtle backdrop, fades on idle */
+.main-header {
+  opacity: 0.15;
+  background: color-mix(in srgb, var(--bg, #f5f6f4) 10%, transparent) !important;
+  backdrop-filter: blur(8px);
+}
+.main-header:hover {
+  opacity: 1;
+}
+
+/* sidebar: fade out on idle */
+.sidebar-inner {
+  opacity: 0.2;
+  transition:
+    opacity 0.4s ease-in-out,
+    background-color 0.4s ease-in-out,
+    background 0.4s ease-in-out,
+    border 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out !important;
+}
+.sidebar-inner:hover {
+  opacity: 1;
+}
+
+/* bottom nav: fade out on idle */
+.bottom-nav {
+  opacity: 0.2;
+  transition: opacity 0.4s ease-in-out !important;
+}
+.bottom-nav:hover {
+  opacity: 1;
+}
+
+/* right rail: fade out on idle */
+.right-rail {
+  opacity: 0.2;
+  transition:
+    opacity 0.4s ease-in-out,
+    background-color 0.4s ease-in-out,
+    background 0.4s ease-in-out !important;
+}
+.right-rail:hover {
+  opacity: 1;
+}
+
+/* welcome banner: fade out */
+.welcome-banner {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out !important;
+}
+.welcome-banner:hover {
+  opacity: 1;
+}
