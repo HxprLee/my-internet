@@ -91,6 +91,18 @@
   border-radius: inherit !important;
 }
 
+.profile-avatar,
+.profile-avatar img {
+  border-radius: 67px !important;
+  border-width: 3px !important;
+}
+.avatar.forest {
+  background: var(--profile-accent) !important;
+}
+.avatar-image {
+  border-radius: 67px !important;
+}
+
 /* transparent background vars for both light and dark modes */
 .app-shell {
   --bg: transparent !important;
