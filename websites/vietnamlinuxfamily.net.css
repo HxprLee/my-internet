@@ -70,6 +70,12 @@
 .profile-cover video {
   object-fit: cover !important;
 }
+/* music disc: fill the thumbnail to the round label (was letterboxing as fit) */
+.vinyl-label {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
 .profile-cover-toggle,
 .profile-pet {
   border-radius: inherit !important;
