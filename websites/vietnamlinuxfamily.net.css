@@ -59,6 +59,18 @@
   background: none !important;
 }
 
+/* profile banner: round every corner */
+.profile-cover,
+.profile-backdrop {
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+.profile-cover-media,
+.profile-cover-toggle,
+.profile-pet {
+  border-radius: inherit !important;
+}
+
 /* transparent background vars for both light and dark modes */
 .app-shell {
   --bg: transparent !important;
