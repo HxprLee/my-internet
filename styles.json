@@ -3109,6 +3109,19 @@
       "vidbinge-no footer": "footer {\n  display: none !important;\n}",
       "vidbinge-no animation": ".h-\\[88px\\] {\n  display: none !important;\n}"
     },
+    "vietnamlinuxfamily.net.css": {
+      "vietnamlinuxfamily.net-transparent": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "transparent background vars for both light and dark modes": ".app-shell {\n  --bg: transparent !important;\n  --paper: transparent !important;\n  --surface: transparent !important;\n  --surface-soft: transparent !important;\n  --line: transparent !important;\n}",
+      "dark mode overrides": "html.vnlf-dark .app-shell, .app-shell.dark {\n  --bg: transparent !important;\n  --paper: transparent !important;\n  --surface: transparent !important;\n  --surface-soft: transparent !important;\n  --line: transparent !important;\n}",
+      "page shell and layout": "html, body, .app-shell, .sidebar, .sidebar-inner, .sidebar-bottom, .sidebar-social-community, .sidebar-social-links, .main-content, .feed-column, .feed-stack, .thread-feed, .thread-feed-stack, .feed-tabs, .feed-sentinel, .main-header, .mobile-header, .bottom-nav, .bottom-nav-menu, .right-rail, .rail-card, .rail-footer, .composer-bar, .composer-bar.thread-composer {\n  background-color: transparent !important;\n  background: none !important;\n  box-shadow: none !important;\n  border-color: transparent !important;\n  transition:\n    background-color 0.4s ease-in-out,\n    background 0.4s ease-in-out,\n    border 0.4s ease-in-out,\n    box-shadow 0.4s ease-in-out,\n    opacity 0.4s ease-in-out !important;\n}",
+      "article / thread cards": ".article-card, .thread-post, .article-actions, .thread-actions, .article-content-renderer, .post-rich-text {\n  background: transparent !important;\n  box-shadow: none !important;\n  border: none !important;\n}",
+      "right rail widgets": ".rail-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  border: none !important;\n}",
+      "sticky header: subtle backdrop, fades on idle": ".main-header {\n  opacity: 0.15;\n  background: color-mix(in srgb, var(--bg, #f5f6f4) 10%, transparent) !important;\n  backdrop-filter: blur(8px);\n}\n.main-header:hover {\n  opacity: 1;\n}",
+      "sidebar: fade out on idle": ".sidebar-inner {\n  opacity: 0.2;\n  transition:\n    opacity 0.4s ease-in-out,\n    background-color 0.4s ease-in-out,\n    background 0.4s ease-in-out,\n    border 0.4s ease-in-out,\n    box-shadow 0.4s ease-in-out !important;\n}\n.sidebar-inner:hover {\n  opacity: 1;\n}",
+      "bottom nav: fade out on idle": ".bottom-nav {\n  opacity: 0.2;\n  transition: opacity 0.4s ease-in-out !important;\n}\n.bottom-nav:hover {\n  opacity: 1;\n}",
+      "right rail: fade out on idle": ".right-rail {\n  opacity: 0.2;\n  transition:\n    opacity 0.4s ease-in-out,\n    background-color 0.4s ease-in-out,\n    background 0.4s ease-in-out !important;\n}\n.right-rail:hover {\n  opacity: 1;\n}",
+      "welcome banner: fade out": ".welcome-banner {\n  opacity: 0.7;\n  transition: opacity 0.4s ease-in-out !important;\n}\n.welcome-banner:hover {\n  opacity: 1;\n}"
+    },
     "vimdoc.sourceforge.net.css": {
       "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, #content, section, #__next, #navigation-wrapper, #global-navbar, .head.notfixed, .sidebar, colgroup > col, .lightbg, .darkbg {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
