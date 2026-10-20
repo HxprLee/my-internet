@@ -1,6 +1,55 @@
 /* vietnamlinuxfamily.net-transparent */
 :root {
   --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-fafafa: transparent !important;
+}
+
+/* user profile page */
+.profile-root,
+.profile-header,
+.profile-cover,
+.profile-info,
+.profile-tabs,
+.profile-content,
+.profile-sidebar,
+.profile-section,
+.profile-stats,
+.profile-bio,
+.profile-meta,
+.profile-actions,
+.profile-badge,
+.user-profile,
+.user-header,
+.user-info,
+.user-tabs,
+.user-content,
+.user-sidebar,
+.user-section,
+.user-stats,
+.user-bio,
+.user-meta,
+.user-actions,
+.user-badge,
+[data-testid="profile-header"],
+[data-testid="profile-cover"],
+[data-testid="profile-info"],
+[data-testid="profile-tabs"],
+[class*="profile-header"],
+[class*="profile-cover"],
+[class*="profile-info"],
+[class*="profile-tabs"],
+[class*="profile-content"],
+[class*="profile-sidebar"],
+[class*="profile-section"],
+[class*="user-profile"],
+[class*="user-header"],
+[class*="user-info"],
+[class*="user-tabs"],
+[class*="user-content"],
+[id*="profile"],
+[id*="user-profile"] {
+  background-color: transparent !important;
+  background: none !important;
 }
 
 /* transparent background vars for both light and dark modes */
