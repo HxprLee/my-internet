@@ -79,7 +79,7 @@
 .vinyl-label,
 .vinyl-label::before,
 .vinyl-label::after {
-  background-size: auto 140% !important;
+  background-size: auto 134% !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
@@ -145,7 +145,6 @@ body,
 }
 
 /* article / thread cards */
-.article-card,
 .thread-post,
 .article-actions,
 .thread-actions,
@@ -156,17 +155,33 @@ body,
   border: none !important;
 }
 
+/* article card: breathing room + faint tint so posts still read as cards */
+.article-card {
+  margin-bottom: 12px !important;
+  background: rgba(245, 246, 244, 0.25) !important;
+}
+html.vnlf-dark .article-card {
+  background: rgba(45, 45, 45, 0.25) !important;
+}
+
+/* thread-post-main paints its own surface; keep it and every child clear so the
+   article-card tint shows through instead of being covered */
+.thread-post-main,
+.thread-post-main * {
+  background-color: transparent !important;
+}
+
 /* right rail widgets */
 .rail-card,
 .voice-card {
-  background: rgba(245, 246, 244, 0.5) !important;
+  background: rgba(245, 246, 244, 0.25) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
   border: 1px solid rgba(0, 0, 0, 0.05) !important;
   border-radius: 12px !important;
 }
 html.vnlf-dark .rail-card,
 html.vnlf-dark .voice-card {
-  background: rgba(45, 45, 45, 0.5) !important;
+  background: rgba(45, 45, 45, 0.25) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(255, 255, 255, 0.05) !important;
 }
