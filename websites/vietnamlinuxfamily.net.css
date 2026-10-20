@@ -70,9 +70,13 @@
 .profile-cover video {
   object-fit: cover !important;
 }
-/* music disc: zoom thumbnail past 100% so the youtube hqdefault black bars are cropped out */
-.vinyl-label {
-  background-size: 130% !important;
+/* music disc: yt hqdefault is 4:3 with ~12.5% black bars top+bottom, so zoom by
+   height (not width) past them; cover the pseudo-elements too since the site's
+   --thumb may be painted on ::before/::after */
+.vinyl-label,
+.vinyl-label::before,
+.vinyl-label::after {
+  background-size: auto 140% !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
 }
